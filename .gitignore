@@ -1,0 +1,25 @@
+# Python files
+*.py
+*.pyc
+__pycache__/
+venv/
+env/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# PDF files
+*.pdf
+
+# Temporary folders
+rehab_v2/
+templates/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

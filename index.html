@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Exercise Reference</title>
+    <style>
+        /* Edward Tufte-inspired minimal design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'ETBembo', 'Palatino', 'Palatino Linotype', 'Palladio L', Georgia, serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #111;
+            background: #fffff8;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-variant: small-caps;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            background: #fffff8;
+            border-bottom: 1px solid #111;
+            z-index: 100;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        .title-section {
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.25rem;
+        }
+
+        /* Filter sections */
+        .filter-section {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .filter-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        /* Buttons - Tufte minimal style */
+        .button-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid #ccc;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            min-height: 44px;
+        }
+
+        button:hover {
+            border-color: #111;
+            color: #111;
+        }
+
+        button.active {
+            background: #111;
+            color: #fffff8;
+            border-color: #111;
+        }
+
+        /* Exercise count */
+        .exercise-count {
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 4rem 1rem;
+        }
+
+        /* Exercise cards - minimal Tufte style */
+        .exercise-list {
+            margin-top: 1rem;
+        }
+
+        .exercise-card {
+            border-top: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+
+        .exercise-card:first-child {
+            border-top: none;
+        }
+
+        .exercise-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0.5rem 0;
+            min-height: 44px;
+        }
+
+        .exercise-header:hover .exercise-name {
+            color: #000;
+        }
+
+        .exercise-main {
+            flex: 1;
+        }
+
+        .exercise-name {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #222;
+            transition: color 0.15s;
+        }
+
+        .exercise-meta {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.25rem;
+            font-size: 0.8rem;
+        }
+
+        .badge {
+            color: #666;
+            font-variant: small-caps;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-separator {
+            color: #ccc;
+        }
+
+        .expand-icon {
+            color: #999;
+            font-size: 0.75rem;
+            margin-left: 1rem;
+            user-select: none;
+        }
+
+        /* Exercise details */
+        .exercise-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .exercise-details.expanded {
+            max-height: 1000px;
+        }
+
+        .exercise-content {
+            padding: 1rem 0 0.5rem 0;
+            border-top: 1px solid #f0f0f0;
+            margin-top: 0.5rem;
+        }
+
+        .detail-section {
+            margin-bottom: 1rem;
+        }
+
+        .detail-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #888;
+            margin-bottom: 0.35rem;
+            font-weight: 600;
+        }
+
+        .detail-text {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .weight-box {
+            background: #f8f8f8;
+            border-left: 2px solid #111;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .weight-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .weight-note {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.25rem;
+        }
+
+        .exercise-image {
+            margin-top: 0.75rem;
+            border: 1px solid #ddd;
+            background: #fff;
+            padding: 0.5rem;
+        }
+
+        .exercise-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .image-ref {
+            font-size: 0.8rem;
+            color: #999;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #999;
+            font-style: italic;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #666;
+        }
+
+        .empty-state-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .empty-state-text {
+            font-size: 0.9rem;
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="title-section">
+            <div class="title">Exercise Reference</div>
+            <div class="subtitle">A curated library of strength and rehab movements</div>
+        </div>
+
+        <!-- Upper/Lower Toggle -->
+        <div class="filter-section">
+            <div class="filter-label">Body Region</div>
+            <div class="button-group">
+                <button onclick="setUpperLower('all')" id="btn-all" class="active">
+                    All
+                </button>
+                <button onclick="setUpperLower('Upper')" id="btn-upper">
+                    Upper Body
+                </button>
+                <button onclick="setUpperLower('Lower')" id="btn-lower">
+                    Lower Body
+                </button>
+            </div>
+        </div>
+
+        <!-- Body Part Filters -->
+        <div class="filter-section">
+            <div class="filter-label">Muscle Group</div>
+            <div class="button-group" id="body-part-filters">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Objective Filter -->
+        <div class="filter-section">
+            <div class="filter-label">Objective</div>
+            <div class="button-group">
+                <button onclick="setObjective('all')" id="btn-obj-all" class="active">
+                    All
+                </button>
+                <button onclick="setObjective('Strength')" id="btn-obj-strength">
+                    Strength
+                </button>
+                <button onclick="setObjective('Rehab')" id="btn-obj-rehab">
+                    Rehab
+                </button>
+            </div>
+        </div>
+
+        <!-- Exercise Count -->
+        <div class="exercise-count" id="exercise-count">Loading...</div>
+    </div>
+
+    <!-- Exercise List -->
+    <div class="container">
+        <div class="exercise-list" id="exercise-list">
+            <div class="loading">Loading exercises...</div>
+        </div>
+    </div>
+
+    <script>
+        let allExercises = [];
+        let allExercisesData = []; // Store all exercises data
+        let currentUpperLower = 'all';
+        let currentBodyPart = 'all';
+        let currentObjective = 'all';
+        let bodyParts = { upper: [], lower: [] };
+        let expandedCards = new Set();
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadExercisesData();
+            loadBodyParts();
+            loadExercises();
+            updateBodyPartFilters();
+        });
+
+        async function loadExercisesData() {
+            // Load exercise data from JSON file
+            const response = await fetch('exercises.json');
+            allExercisesData = await response.json();
+        }
+
+        function loadBodyParts() {
+            // Hard-coded body parts
+            bodyParts = {
+                upper: ['Chest', 'Back', 'Shoulders', 'Biceps', 'Triceps', 'Core'],
+                lower: ['Quads', 'Hamstrings', 'Glutes', 'Hips', 'Full Body']
+            };
+        }
+
+        function loadExercises() {
+            // Filter exercises based on current selections
+            allExercises = allExercisesData.filter(ex => {
+                let matches = true;
+
+                if (currentUpperLower !== 'all' && ex.upper_lower !== currentUpperLower) {
+                    matches = false;
+                }
+
+                if (currentBodyPart !== 'all' && ex.body_part !== currentBodyPart) {
+                    matches = false;
+                }
+
+                if (currentObjective !== 'all' && ex.objective !== currentObjective) {
+                    matches = false;
+                }
+
+                return matches;
+            });
+
+            renderExercises();
+            updateExerciseCount();
+        }
+
+        function setUpperLower(value) {
+            currentUpperLower = value;
+            currentBodyPart = 'all';
+
+            // Update button styles
+            ['all', 'upper', 'lower'].forEach(type => {
+                const btn = document.getElementById(`btn-${type}`);
+                if (btn) {
+                    btn.className = type === value.toLowerCase() ? 'active' : '';
+                }
+            });
+
+            updateBodyPartFilters();
+            loadExercises();
+        }
+
+        function updateBodyPartFilters() {
+            const container = document.getElementById('body-part-filters');
+            let parts = [];
+
+            if (currentUpperLower === 'all') {
+                parts = [...bodyParts.upper, ...bodyParts.lower];
+            } else if (currentUpperLower === 'Upper') {
+                parts = bodyParts.upper;
+            } else {
+                parts = bodyParts.lower;
+            }
+
+            container.innerHTML = `
+                <button onclick="setBodyPart('all')" class="active" id="btn-bp-all">
+                    All
+                </button>
+                ${parts.map(part => `
+                    <button onclick="setBodyPart('${part}')" id="btn-bp-${part}">
+                        ${part}
+                    </button>
+                `).join('')}
+            `;
+        }
+
+        function setBodyPart(value) {
+            currentBodyPart = value;
+
+            // Update button styles
+            let parts = [];
+            if (currentUpperLower === 'all') {
+                parts = [...bodyParts.upper, ...bodyParts.lower];
+            } else if (currentUpperLower === 'Upper') {
+                parts = bodyParts.upper;
+            } else {
+                parts = bodyParts.lower;
+            }
+
+            ['all', ...parts].forEach(part => {
+                const btn = document.getElementById(`btn-bp-${part}`);
+                if (btn) {
+                    btn.className = part === value ? 'active' : '';
+                }
+            });
+
+            loadExercises();
+        }
+
+        function setObjective(value) {
+            currentObjective = value;
+
+            // Update button styles
+            ['all', 'Strength', 'Rehab'].forEach(obj => {
+                const btn = document.getElementById(`btn-obj-${obj.toLowerCase()}`);
+                btn.className = obj.toLowerCase() === value.toLowerCase() ? 'active' : '';
+            });
+
+            loadExercises();
+        }
+
+        function toggleCard(id) {
+            const details = document.getElementById(`details-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+
+            if (expandedCards.has(id)) {
+                details.classList.remove('expanded');
+                icon.textContent = '▼';
+                expandedCards.delete(id);
+            } else {
+                details.classList.add('expanded');
+                icon.textContent = '▲';
+                expandedCards.add(id);
+            }
+        }
+
+        function renderExercises() {
+            const container = document.getElementById('exercise-list');
+
+            if (allExercises.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-title">No exercises found</div>
+                        <div class="empty-state-text">Try adjusting your filters</div>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = allExercises.map(ex => {
+                const isExpanded = expandedCards.has(ex.id);
+                const imageSource = ex.image_placeholder || '';
+                const isKOT = imageSource.includes('Knees Over Toes');
+                const isJeffNippard = imageSource.includes('jeffnippard');
+
+                return `
+                    <div class="exercise-card">
+                        <div class="exercise-header" onclick="toggleCard(${ex.id})">
+                            <div class="exercise-main">
+                                <div class="exercise-name">${ex.name}</div>
+                                <div class="exercise-meta">
+                                    <span class="badge">${ex.body_part}</span>
+                                    <span class="badge-separator">·</span>
+                                    <span class="badge">${ex.objective}</span>
+                                </div>
+                            </div>
+                            <div class="expand-icon" id="icon-${ex.id}">
+                                ${isExpanded ? '▲' : '▼'}
+                            </div>
+                        </div>
+
+                        <div class="exercise-details ${isExpanded ? 'expanded' : ''}" id="details-${ex.id}">
+                            <div class="exercise-content">
+                                ${imageSource && !imageSource.includes('Knees Over Toes') ? `
+                                    <div class="detail-section">
+                                        <div class="detail-label">Visual Guide</div>
+                                        <div class="exercise-image">
+                                            <img src="${imageSource}" alt="${ex.name}" />
+                                        </div>
+                                    </div>
+                                ` : ''}
+
+                                <div class="detail-section">
+                                    <div class="detail-label">Description</div>
+                                    <div class="detail-text">${ex.description}</div>
+                                </div>
+
+                                <div class="detail-section">
+                                    <div class="detail-label">Reference</div>
+                                    <div class="weight-box">
+                                        <div class="weight-text">${ex.reference_weight}</div>
+                                        <div class="weight-note">For intermediate to advanced lifters</div>
+                                    </div>
+                                </div>
+
+                                ${imageSource ? `
+                                    <div class="detail-section">
+                                        <div class="image-ref">
+                                            ${isKOT ? 'Source: Knees Over Toes Team' : ''}
+                                            ${isJeffNippard ? 'Reference: Jeff Nippard' : ''}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function updateExerciseCount() {
+            const count = allExercises.length;
+            const text = count === 1 ? 'exercise' : 'exercises';
+            document.getElementById('exercise-count').textContent = `${count} ${text}`;
+        }
+    </script>
+</body>
+</html>
