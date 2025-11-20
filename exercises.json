@@ -7,7 +7,7 @@
     "objective": "Strength",
     "description": "Set pad below hip bone so hips can hinge freely. Round upper back slightly (chin tucked) to disengage spinal erectors. Squeeze glutes to pull back up. Flare toes out 45° to recruit glutes more effectively.",
     "reference_weight": "3x8 @ 25-45 lbs",
-    "image_placeholder": "/static/images/back_extension_45.png"
+    "image_placeholder": "static/images/back_extension_45.png"
   },
   {
     "id": 61,
@@ -17,7 +17,7 @@
     "objective": "Strength",
     "description": "Sit on machine but lean forward slightly, grabbing frame for leverage. Drive knees outward hard, pausing for split second at peak contraction. Forward lean puts glute medius in stronger position to work.",
     "reference_weight": "3x8 @ 90-130 lbs",
-    "image_placeholder": "/static/images/machine_hip_abduction.png"
+    "image_placeholder": "static/images/machine_hip_abduction.png"
   },
   {
     "id": 83,
@@ -27,7 +27,7 @@
     "objective": "Rehab",
     "description": "Lie on side. Keep top leg straight and lift directly upward (abduction). Lower slowly. Lead with heel slightly to hit glute medius, not hip flexor. Don't let toes rotate upward.",
     "reference_weight": "15-20 reps @ 5-10 lbs ankle weights",
-    "image_placeholder": "/static/images/side_lying_leg_raise.png"
+    "image_placeholder": "static/images/side_lying_leg_raise.png"
   },
   {
     "id": 63,
@@ -37,7 +37,7 @@
     "objective": "Strength",
     "description": "Place small plate under front foot inside Smith machine. Lower back knee well below level of front foot to maximize stretch. This is \"extreme stretch\" exercise—focus entirely on bottom 1/3 where glute is fully lengthened.",
     "reference_weight": "3x8 per leg @ 95-135 lbs",
-    "image_placeholder": "/static/images/smith_machine_lunge_elevated.png"
+    "image_placeholder": "static/images/smith_machine_lunge_elevated.png"
   },
   {
     "id": 60,
@@ -47,7 +47,7 @@
     "objective": "Strength",
     "description": "Take long step forward. Lower back knee until it gently kisses ground. Drive through heel of front foot to stand, swing back leg through to next step. Lean torso forward 20-30° to bias glutes over quads.",
     "reference_weight": "3x8 per leg @ 40-70 lbs per hand",
-    "image_placeholder": "/static/images/walking_lunges.png"
+    "image_placeholder": "static/images/walking_lunges.png"
   },
   {
     "id": 80,
@@ -57,7 +57,7 @@
     "objective": "Rehab",
     "description": "Get into top position of back extension (body in straight line). Hold position isometrically. Keep chin tucked and glutes squeezed. Builds endurance in spinal erectors.",
     "reference_weight": "60-90 seconds @ Bodyweight + 25 lbs",
-    "image_placeholder": "/static/images/60_second_hold_back.png"
+    "image_placeholder": "static/images/60_second_hold_back.png"
   },
   {
     "id": 79,
@@ -67,7 +67,7 @@
     "objective": "Rehab",
     "description": "Set pad below hip bone. Lower torso until you feel stretch in hamstrings, raise back up until body in straight line. Squeeze glutes at top to protect low back. Do not fling torso up—use controlled muscle tension.",
     "reference_weight": "45-90 lbs (Plate held to chest)",
-    "image_placeholder": "/static/images/back_raises_45.png"
+    "image_placeholder": "static/images/back_raises_45.png"
   },
   {
     "id": 81,
@@ -77,7 +77,7 @@
     "objective": "Rehab",
     "description": "Start standing on box holding weight. Tuck chin to chest, roll spine down one vertebra at a time (rounding back purposefully). Uncurl from lower back up to neck. Articulates spine segment by segment—imagine string of pearls dropping one by one.",
     "reference_weight": "25-50% Bodyweight",
-    "image_placeholder": "/static/images/jefferson_curl.png"
+    "image_placeholder": "static/images/jefferson_curl.png"
   },
   {
     "id": 77,
@@ -87,7 +87,7 @@
     "objective": "Rehab",
     "description": "Secure ankles, start kneeling with hips fully extended. Lower yourself slowly toward floor, resisting with hamstrings. Catch with hands when you fail, push back up. Keep hips locked open (no bending at waist)—movement occurs strictly at knee joint.",
     "reference_weight": "5-10 Full Reps @ Bodyweight",
-    "image_placeholder": "/static/images/nordic_curls.png"
+    "image_placeholder": "static/images/nordic_curls.png"
   },
   {
     "id": 78,
@@ -97,7 +97,7 @@
     "objective": "Rehab",
     "description": "Sit on bench edge with barbell on back. Arch back slightly, hinge forward at hips lowering chest toward knees. Drive back up using glutes and adductors. Keep knees out wide to stretch adductors and strengthen lower back in elongated position.",
     "reference_weight": "95-135 lbs (50-75% Bodyweight)",
-    "image_placeholder": "/static/images/seated_good_morning.png"
+    "image_placeholder": "static/images/seated_good_morning.png"
   },
   {
     "id": 82,
@@ -107,7 +107,7 @@
     "objective": "Rehab",
     "description": "Stand on slant board (toes higher than heels). Allow heels to sink down for deep stretch. Press up onto toes, squeezing calves at top. Slant board keeps ankle dorsiflexed for greater calf stretch. Pause at bottom to eliminate Achilles bounce.",
     "reference_weight": "3 sets x 15 reps @ Bodyweight + 40-60 lbs",
-    "image_placeholder": "/static/images/slant_board_calf_raise.png"
+    "image_placeholder": "static/images/slant_board_calf_raise.png"
   },
   {
     "id": 84,
@@ -117,7 +117,7 @@
     "objective": "Rehab",
     "description": "Set up bench or box at hip height. Place one leg on platform in \"pigeon\" pose (shin flat). Keep back leg standing straight. Gently bounce torso forward over front leg. Dynamic stretch, not static hold—goal is to gently pulse into stiffness to improve external rotation.",
     "reference_weight": "2 sets x 20 pulses per side",
-    "image_placeholder": "/static/images/bouncing_pigeon_stretch.png"
+    "image_placeholder": "static/images/bouncing_pigeon_stretch.png"
   },
   {
     "id": 73,
@@ -127,7 +127,7 @@
     "objective": "Rehab",
     "description": "Set treadmill to high incline, power off (deadmill). Lean back against console and push belt backward using balls of feet. Extend knee fully with every step. Keep glutes tensed and torso upright—force comes entirely from quads and knees.",
     "reference_weight": "10 minutes continuous",
-    "image_placeholder": "/static/images/backwards_treadmill_walk.png"
+    "image_placeholder": "static/images/backwards_treadmill_walk.png"
   },
   {
     "id": 57,
@@ -137,7 +137,7 @@
     "objective": "Strength",
     "description": "Elevate rear foot on bench. Hinge slightly forward for glutes or stay upright for quads. Drop back knee until deep stretch in rear hip and front glute. Movement is \"elevator\" (up/down), not \"escalator.\"",
     "reference_weight": "3x8 @ 50-80 lbs per hand",
-    "image_placeholder": "/static/images/bulgarian_split_squat.png"
+    "image_placeholder": "static/images/bulgarian_split_squat.png"
   },
   {
     "id": 76,
@@ -147,7 +147,7 @@
     "objective": "Rehab",
     "description": "Assume long split stance, elevate front foot on small platform. Drive front knee forward until hamstring fully covers calf. Keep back leg straight, back glute squeezed. Torso upright. Actively push front foot into platform for constant VMO tension.",
     "reference_weight": "25-50% Bodyweight (per hand) for reps",
-    "image_placeholder": "/static/images/elevated_lunge_holds.png"
+    "image_placeholder": "static/images/elevated_lunge_holds.png"
   },
   {
     "id": 59,
@@ -157,7 +157,7 @@
     "objective": "Strength",
     "description": "Hold dumbbell vertically against chest. Squat between legs, keeping chest proud. Elbows brush inside of knees at bottom. Keep weight touching chest entire time to maintain core tension.",
     "reference_weight": "3x8 @ 60-90 lbs",
-    "image_placeholder": "/static/images/goblet_squat.png"
+    "image_placeholder": "static/images/goblet_squat.png"
   },
   {
     "id": 54,
@@ -167,7 +167,7 @@
     "objective": "Strength",
     "description": "Place feet shoulder-width on platform. Lower until hamstrings cover calves—as deep as mobility allows without heels lifting. Drive through whole foot. Bottom position (deep stretch) is most hypertrophic.",
     "reference_weight": "3x8 @ 270-360 lbs",
-    "image_placeholder": "/static/images/hack_squat.png"
+    "image_placeholder": "static/images/hack_squat.png"
   },
   {
     "id": 58,
@@ -177,7 +177,7 @@
     "objective": "Strength",
     "description": "Place feet lower on platform to bias quads. Lower until glutes about to curl off seat—stop just before lumbar flexion. Use handles to pull yourself down to prevent butt lifting.",
     "reference_weight": "3x8 @ 360-540 lbs",
-    "image_placeholder": "/static/images/leg_press.png"
+    "image_placeholder": "static/images/leg_press.png"
   },
   {
     "id": 55,
@@ -187,7 +187,7 @@
     "objective": "Strength",
     "description": "Similar setup to hack squat. Machine arc allows feet slightly lower to emphasize quads. Machine naturally offloads lower back—sink as deep as possible into the \"hole\" to maximize knee flexion.",
     "reference_weight": "3x8 @ 180-270 lbs",
-    "image_placeholder": "/static/images/pendulum_squat.png"
+    "image_placeholder": "static/images/pendulum_squat.png"
   },
   {
     "id": 74,
@@ -197,7 +197,7 @@
     "objective": "Rehab",
     "description": "Pull: Attach strap to waist. Walk backward, reaching toes back letting knees track over toes. Push: Lean into sled with arms straight, driving knees forward. For reverse pull, focus on rhythm—reach back, plant toe, drive heel down to pump blood into knees.",
     "reference_weight": "Push: 300-500 lbs | Pull: 200-350 lbs",
-    "image_placeholder": "/static/images/sled_pull_pushes.png"
+    "image_placeholder": "static/images/sled_pull_pushes.png"
   },
   {
     "id": 56,
@@ -207,7 +207,7 @@
     "objective": "Strength",
     "description": "Place feet slightly further forward than normal squat. Stay more upright and drive knees forward over toes to bias quads. Control the negative—Smith machine adds friction, actively resist gravity.",
     "reference_weight": "3x8 @ 185-275 lbs",
-    "image_placeholder": "/static/images/smith_machine_squat.png"
+    "image_placeholder": "static/images/smith_machine_squat.png"
   },
   {
     "id": 75,
@@ -217,7 +217,7 @@
     "objective": "Rehab",
     "description": "Stand with heels and butt against wall (or use tib bar). Lift toes up toward shins as high as possible, hold split second, control down. To make harder, move feet further from wall. Strengthens anterior tibialis (shin) to decelerate force.",
     "reference_weight": "20-45 lbs (Tib Bar) or 25 reps bodyweight",
-    "image_placeholder": "/static/images/tibia_lifts.png"
+    "image_placeholder": "static/images/tibia_lifts.png"
   },
   {
     "id": 53,
@@ -227,7 +227,7 @@
     "objective": "Strength",
     "description": "Sit with knees slightly bent. Lean forward at bottom to stretch lats, pull handle to lower abs while returning torso to vertical. Avoid ego lifting by swinging body—keep torso movement controlled.",
     "reference_weight": "3x8 @ 120-160 lbs",
-    "image_placeholder": "/static/images/cable_row.png"
+    "image_placeholder": "static/images/cable_row.png"
   },
   {
     "id": 51,
@@ -237,7 +237,7 @@
     "objective": "Strength",
     "description": "Set chest pad so you barely reach handles at full extension. Pull elbows back until in line with torso. Allow shoulders to round forward at bottom for deep stretch. Keep chest glued to pad.",
     "reference_weight": "3x8 @ 90-130 lbs per side",
-    "image_placeholder": "/static/images/chest_supported_rows.png"
+    "image_placeholder": "static/images/chest_supported_rows.png"
   },
   {
     "id": 94,
@@ -247,7 +247,7 @@
     "objective": "Rehab",
     "description": "Lie perpendicular across bench (upper back on bench, hips forming bridge). Hold dumbbell with both hands over chest. Lower weight backward behind head with slightly bent elbows. Drop hips slightly as weight goes back to increase stretch on rib cage and lats.",
     "reference_weight": "50-70 lbs dumbbell",
-    "image_placeholder": "/static/images/dumbbell_pullover.png"
+    "image_placeholder": "static/images/dumbbell_pullover.png"
   },
   {
     "id": 50,
@@ -257,7 +257,7 @@
     "objective": "Strength",
     "description": "Take medium-width thumbless grip. Initiate by driving elbows down, not pulling with biceps. Lean back 10-15° with rigid spine. Think \"putting elbows into back pockets.\"",
     "reference_weight": "3x8 @ 120-160 lbs",
-    "image_placeholder": "/static/images/lat_pulldown.png"
+    "image_placeholder": "static/images/lat_pulldown.png"
   },
   {
     "id": 52,
@@ -267,7 +267,7 @@
     "objective": "Strength",
     "description": "Stand perpendicular to landmine bar. Hinge at hips with flat back. Drive elbow up and back, focusing on upper back and rear delt. Use lifting straps to remove grip as limiting factor.",
     "reference_weight": "3x8 @ 90-130 lbs",
-    "image_placeholder": "/static/images/meadows_row.png"
+    "image_placeholder": "static/images/meadows_row.png"
   },
   {
     "id": 69,
@@ -277,7 +277,7 @@
     "objective": "Strength",
     "description": "Set bench so armpit snug over top. Lower dumbbell all the way until arm straight (full stretch), then curl up. Jeff rates this \"S-Tier\" for the stretch. Do not stop short at bottom—bottom half is most important for growth.",
     "reference_weight": "3x8 @ 30-50 lbs per hand",
-    "image_placeholder": "/static/images/dumbbell_preacher_curl.png"
+    "image_placeholder": "static/images/dumbbell_preacher_curl.png"
   },
   {
     "id": 70,
@@ -287,7 +287,7 @@
     "objective": "Strength",
     "description": "Align elbow joint with machine pivot point. Keep triceps glued to pad throughout movement. Avoid lifting butt off seat or leaning back to help get weight up. Stay locked in.",
     "reference_weight": "3x8 @ 60-90 lbs",
-    "image_placeholder": "/static/images/machine_preacher_curl.png"
+    "image_placeholder": "static/images/machine_preacher_curl.png"
   },
   {
     "id": 71,
@@ -297,7 +297,7 @@
     "objective": "Strength",
     "description": "Same setup as regular preacher curl but hold dumbbell with neutral grip (palm facing inward). Targets brachialis (muscle that pushes bicep up). Focus on slow, grinding tempo.",
     "reference_weight": "3x8 @ 30-50 lbs per hand",
-    "image_placeholder": "/static/images/preacher_hammer_curl.png"
+    "image_placeholder": "static/images/preacher_hammer_curl.png"
   },
   {
     "id": 49,
@@ -307,7 +307,7 @@
     "objective": "Strength",
     "description": "Adjust seat so handles align with mid-chest. Retract scapula to create stable base. Press forward explosively, control eccentric 2-3 seconds. Stop before shoulders roll forward.",
     "reference_weight": "3x8 @ 140-200 lbs",
-    "image_placeholder": "/static/images/machine_chest_press.png"
+    "image_placeholder": "static/images/machine_chest_press.png"
   },
   {
     "id": 48,
@@ -317,7 +317,7 @@
     "objective": "Strength",
     "description": "Set bench upright in front of cables. Drive biceps toward chest, thinking about \"closing the gap\" rather than just touching hands. Imagine crushing a walnut between biceps to fully shorten the pec.",
     "reference_weight": "3x8 @ 40-60 lbs per side",
-    "image_placeholder": "/static/images/seated_cable_pec_fly.png"
+    "image_placeholder": "static/images/seated_cable_pec_fly.png"
   },
   {
     "id": 86,
@@ -327,7 +327,7 @@
     "objective": "Rehab",
     "description": "Sit on floor in \"90/90\" position. Keep torso upright. Attempt to lift back foot and knee off ground (or just foot for internal rotation). Cramps outer hip (glute medius/minimus). Even if you can't lift leg, intent to lift creates necessary stimulus.",
     "reference_weight": "10-second max effort holds (Bodyweight)",
-    "image_placeholder": "/static/images/90_90_trail_leg_lift.png"
+    "image_placeholder": "static/images/90_90_trail_leg_lift.png"
   },
   {
     "id": 85,
@@ -337,7 +337,7 @@
     "objective": "Rehab",
     "description": "Attach strap to feet connected to low cable machine, lie on back. Pull knees toward chest against resistance, lifting tailbone slightly off ground at top. Targets hip flexors (psoas) and lower abs. Control eccentric so lower back doesn't arch excessively.",
     "reference_weight": "25-45 lbs (Cable Stack)",
-    "image_placeholder": "/static/images/reverse_squat_laying_cable.png"
+    "image_placeholder": "static/images/reverse_squat_laying_cable.png"
   },
   {
     "id": 87,
@@ -347,7 +347,7 @@
     "objective": "Rehab",
     "description": "Turn sideways on 45-degree back extension machine. Hold weight in hand closest to floor. Lower torso sideways, crunch back up to neutral. Targets QL (Quadratus Lumborum). Keep movement strictly lateral—no twisting forward or backward.",
     "reference_weight": "30-50 lbs dumbbell",
-    "image_placeholder": "/static/images/side_flex_with_weight.png"
+    "image_placeholder": "static/images/side_flex_with_weight.png"
   },
   {
     "id": 88,
@@ -357,7 +357,7 @@
     "objective": "Rehab",
     "description": "Sit on floor with soles of feet together. Hold dumbbell at chest. Hinge forward at hips, trying to get chest toward feet/floor. Opens hips and strengthens lower back simultaneously in shortened position.",
     "reference_weight": "30-50 lbs dumbbell",
-    "image_placeholder": "/static/images/weighted_butterfly_hinge.png"
+    "image_placeholder": "static/images/weighted_butterfly_hinge.png"
   },
   {
     "id": 92,
@@ -367,7 +367,7 @@
     "objective": "Rehab",
     "description": "Hold resistance band with arms extended. Pull band apart until it touches chest, squeezing shoulder blades together. Keep shoulders depressed (down away from ears). Do not let rib cage flare open.",
     "reference_weight": "Heavy Resistance Band (Black/Purple) for 20 reps",
-    "image_placeholder": "/static/images/band_pull_apart.png"
+    "image_placeholder": "static/images/band_pull_apart.png"
   },
   {
     "id": 68,
@@ -377,7 +377,7 @@
     "objective": "Strength",
     "description": "Use wrist cuff attachment. Stand in front of cable with cable running behind back. Lean away from machine slightly and raise arm out to side. Cable behind back prevents cheating by swinging forward—keeps pure tension on side delt.",
     "reference_weight": "3x8 @ 20-35 lbs per side",
-    "image_placeholder": "/static/images/behind_back_cuffed_lateral_raise.png"
+    "image_placeholder": "static/images/behind_back_cuffed_lateral_raise.png"
   },
   {
     "id": 64,
@@ -387,7 +387,7 @@
     "objective": "Strength",
     "description": "Set cable at wrist level. Stand sideways to machine. Raise handle out and slightly forward (scapular plane) until arm parallel to floor. Lead with elbow, not hand. Imagine pouring out pitcher of water at top.",
     "reference_weight": "3x8 @ 15-25 lbs per side",
-    "image_placeholder": "/static/images/cable_lateral_raises.png"
+    "image_placeholder": "static/images/cable_lateral_raises.png"
   },
   {
     "id": 65,
@@ -397,7 +397,7 @@
     "objective": "Strength",
     "description": "Set dual cables to bottom position. Cross cables and raise arms up and out in \"Y\" shape (10 and 2 o'clock positions). Targets side delts in shortened position. Focus on hard squeeze at very top.",
     "reference_weight": "3x8 @ 10-20 lbs per side",
-    "image_placeholder": "/static/images/cable_y_raises.png"
+    "image_placeholder": "static/images/cable_y_raises.png"
   },
   {
     "id": 91,
@@ -407,7 +407,7 @@
     "objective": "Rehab",
     "description": "Lie on side. Hold dumbbell with top arm. Start with arm hanging across body, raise straight up until vertical. Keep arm straight. Isolates rear delt and scapular stabilizers.",
     "reference_weight": "10-15 lbs dumbbell",
-    "image_placeholder": "/static/images/powell_raise.png"
+    "image_placeholder": "static/images/powell_raise.png"
   },
   {
     "id": 67,
@@ -417,7 +417,7 @@
     "objective": "Strength",
     "description": "Set cables high (above head). Grab left cable with right hand and vice versa (remove handles, grab rubber stops). Pull arms apart and down until in line with body. Keep shoulders depressed (down) to prevent upper traps taking over.",
     "reference_weight": "3x8 @ 15-25 lbs per side",
-    "image_placeholder": "/static/images/reverse_cable_crossover.png"
+    "image_placeholder": "static/images/reverse_cable_crossover.png"
   },
   {
     "id": 66,
@@ -427,7 +427,7 @@
     "objective": "Strength",
     "description": "Adjust seat so hands at shoulder level. Push hands out and back in wide arc. Keep soft bend in elbows without changing angle. Try sideways (unilaterally) for better ROM without machine hitting chest.",
     "reference_weight": "3x8 @ 70-100 lbs",
-    "image_placeholder": "/static/images/reverse_pec_deck.png"
+    "image_placeholder": "static/images/reverse_pec_deck.png"
   },
   {
     "id": 89,
@@ -437,7 +437,7 @@
     "objective": "Rehab",
     "description": "Sit on bench with one foot up. Rest elbow on that knee. Holding light weight, rotate hand downward toward instep, then rotate upward/backward. External rotator cuff exercise. Keep elbow strictly at 90 degrees.",
     "reference_weight": "15-20 lbs dumbbell",
-    "image_placeholder": "/static/images/shoulder_rotation_elbow_knee.png"
+    "image_placeholder": "static/images/shoulder_rotation_elbow_knee.png"
   },
   {
     "id": 90,
@@ -447,7 +447,7 @@
     "objective": "Rehab",
     "description": "Lie chest down on low incline bench. With arms straight, raise dumbbells up at 45-degree angle (Y-shape), initiating by retracting lower traps. Keep thumbs pointing up. Focus on muscles in mid-back, not upper neck.",
     "reference_weight": "10-15 lbs dumbbells",
-    "image_placeholder": "/static/images/trap_raise.png"
+    "image_placeholder": "static/images/trap_raise.png"
   },
   {
     "id": 72,
@@ -457,7 +457,7 @@
     "objective": "Strength",
     "description": "Lie on bench. Hold EZ bar with narrow grip. Lower bar toward forehead (or slightly behind head for more stretch) by bending only at elbows. Allow elbows to drift slightly back behind head at bottom to increase stretch on long head.",
     "reference_weight": "3x8 @ 50-80 lbs",
-    "image_placeholder": "/static/images/barbell_skull_crushers.png"
+    "image_placeholder": "static/images/barbell_skull_crushers.png"
   },
   {
     "id": 93,
@@ -467,6 +467,6 @@
     "objective": "Rehab",
     "description": "Support yourself on parallel bars. Lower body until shoulders below elbows. Press back up. Pause at bottom—loaded stretch at bottom is key for shoulder health in this protocol.",
     "reference_weight": "Bodyweight + 45 lbs (Weighted Dip)",
-    "image_placeholder": "/static/images/dips_rehab.png"
+    "image_placeholder": "static/images/dips_rehab.png"
   }
 ]
